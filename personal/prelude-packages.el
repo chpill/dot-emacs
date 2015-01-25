@@ -18,7 +18,7 @@
 (require 'prelude-css)
 (require 'prelude-emacs-lisp)
 ;; (require 'prelude-erlang)
-;; (require 'prelude-go)
+(require 'prelude-go)
 ;; (require 'prelude-haskell)
 (require 'prelude-js)
 (require 'prelude-latex)
@@ -27,7 +27,7 @@
 (require 'prelude-org) ;; Org-mode helps you keep TODO lists, notes and more
 ;; (require 'prelude-perl)
 ;; (require 'prelude-python)
-(require 'prelude-ruby)
+;; (require 'prelude-ruby)
 ;; (require 'prelude-scala)
 ;; (require 'prelude-scheme)
 (require 'prelude-shell)
