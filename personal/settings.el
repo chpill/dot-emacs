@@ -23,13 +23,9 @@
 ;; A mix of tabs and space seems a better way to do this,
 ;; see smart-tab documentation
 (setq-default indent-tabs-mode nil)
-
-;; for some inadequately explored reasons, this does not work... Need for some
-;; after-initialize?
-(setq js2-indent-level 2)
-(setq js-indent-level 2)
-(setq js2-basic-offset 2)
-
+(custom-set-variables
+  '(js2-basic-offset 2)
+  '(js2-indent-level 2))
 
 (defun js2-toggle-indent ()
   (interactive)
