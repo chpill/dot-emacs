@@ -4,7 +4,7 @@
 ;; add line numbers on ALL buffers... there should be a way to only
 ;; put them on buffer displaying files?
 
-;;(global-linum-mode t)
+(global-linum-mode t)
 
 
 (electric-indent-mode +1)
@@ -15,7 +15,10 @@
                             helm-ag
                             git-gutter+
                             fringe-helper
-                            git-gutter-fringe+))
+                            git-gutter-fringe+
+                            evil-smartparens))
+
+(add-hook 'clojure-mode-hook #'evil-smartparens-mode)
 
 (global-git-gutter+-mode t)
 
@@ -41,6 +44,7 @@
 ;;(define-key global-map "\C-cc" 'org-capture)
 ;; saf sfda saf
 
+(setq projectile-switch-project-action 'helm-projectile)
 
 (provide 'settings)
 ;;; settings ends here
