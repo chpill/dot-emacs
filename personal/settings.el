@@ -16,9 +16,7 @@
                             git-gutter+
                             fringe-helper
                             git-gutter-fringe+
-                            evil-smartparens))
-
-(add-hook 'clojure-mode-hook #'evil-smartparens-mode)
+                            slamhound))
 
 (global-git-gutter+-mode t)
 
