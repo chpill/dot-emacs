@@ -1,9 +1,9 @@
 ;;; settings --- my personal settings to emulate the way i work in vim
 
 ;;; Code:
+
 ;; add line numbers on ALL buffers... there should be a way to only
 ;; put them on buffer displaying files?
-
 (global-linum-mode t)
 
 
@@ -43,6 +43,9 @@
 ;; saf sfda saf
 
 (setq projectile-switch-project-action 'helm-projectile)
+
+;; to avoid seeing a warning message all the time when using magit
+(setq magit-last-seen-setup-instructions "1.4.0")
 
 (provide 'settings)
 ;;; settings ends here
